@@ -27,7 +27,7 @@ body{
 }
 .button_plus{
     height: 50px;
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -35,7 +35,6 @@ body{
     margin-top: 3rem;
 }
 .wrap_task{
-
     margin-bottom: 1em;
     box-shadow: 2px 3px 10px black;
     display: grid;
