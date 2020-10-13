@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/code.js" defer></script>
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://material-icons.github.io/material-icons-font/css/all.css"/>
+    <script src="dist/index.bundle.js" defer></script>
 </head>
-<body>
+<body class="has-background-info">
+<div class="main_wrapper columns is-centered has-text-light">
+    <div class="column is-half has-text-centered">
+        <div class="todo">
+            <h1 class="is-size-3">Приложение для создания своих дел</h1>
+            <div class="field">
+                <div class="control">
+                    <select name="prioritet" id="prioritet">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <input type="text" placeholder="Задание..." class="input is-medium">
+        <div class="button_plus has-background-danger">
+            <i class="material-icons md-add"></i>
+        </div>
 
+        <div id="deals">
+            <!--        Здесь у нас будет происходить отрисовка при помощи JavaScript-->
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -11,13 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b465cabd-e451-4dd6-86d4-466adb164cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
       <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.code.mjs">
+  <component name="RunManager" selected="npm.webpack">
     <configuration name="code.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/code.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -66,8 +63,19 @@
     <configuration name="ex.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ex.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="webpack" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="webpack" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.webpack" />
         <item itemvalue="Node.js.code.mjs" />
         <item itemvalue="Node.js.code.js" />
         <item itemvalue="Node.js.ex.js" />
@@ -84,7 +92,7 @@
       <updated>1602001642772</updated>
       <workItem from="1602001647334" duration="798000" />
       <workItem from="1602003579014" duration="4225000" />
-      <workItem from="1602604876674" duration="3024000" />
+      <workItem from="1602604876674" duration="4566000" />
     </task>
     <servers />
   </component>
@@ -104,23 +112,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1893" height="216" key="GridCell.Tab.0.bottom" timestamp="1602008041085">
+    <state width="1893" height="394" key="GridCell.Tab.0.bottom" timestamp="1602609748151">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602008041085" />
-    <state width="1893" height="216" key="GridCell.Tab.0.center" timestamp="1602008041083">
+    <state width="1893" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602609748151" />
+    <state width="1893" height="394" key="GridCell.Tab.0.center" timestamp="1602609748149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="216" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602008041083" />
-    <state width="1893" height="216" key="GridCell.Tab.0.left" timestamp="1602008041082">
+    <state width="1893" height="394" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602609748149" />
+    <state width="1893" height="394" key="GridCell.Tab.0.left" timestamp="1602609748148">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="216" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602008041082" />
+    <state width="1893" height="394" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602609748148" />
     <state width="1893" height="287" key="GridCell.Tab.0.left/0.0.1920.997@0.0.1920.997" timestamp="1602002449205" />
-    <state width="1893" height="216" key="GridCell.Tab.0.right" timestamp="1602008041084">
+    <state width="1893" height="394" key="GridCell.Tab.0.right" timestamp="1602609748150">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1893" height="216" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602008041084" />
+    <state width="1893" height="394" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602609748150" />
     <state x="342" y="162" width="755" height="622" key="find.popup" timestamp="1602001720764">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
