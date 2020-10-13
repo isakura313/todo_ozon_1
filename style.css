@@ -1,0 +1,51 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 101vh;
+}
+.todo{
+    display: grid;
+    grid-template-columns: 85.75px 60% 85.75px;
+    grid-template-rows: 80px 60px 40px;
+    column-gap: 25px;
+    justify-content: center;
+
+}
+.select{
+    font-size: 1.25rem;
+}
+
+.todo q{
+    grid-column: 1/4;
+}
+.todo h1{
+    grid-column: 1/4;
+}
+.button_plus{
+    height: 50px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+#deals{
+    margin-top: 3rem;
+}
+.wrap_task{
+
+    margin-bottom: 1em;
+    box-shadow: 2px 3px 10px black;
+    display: grid;
+    grid-template-columns: 60% 30% 10% ;
+    padding: 20px 10px;
+}
+.material-icons{
+    cursor: pointer;
+    font-size: 30px;
+}
+.material-icons:hover{
+    color:red;
+}

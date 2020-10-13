@@ -15,23 +15,32 @@
             <h1 class="is-size-3">Приложение для создания своих дел</h1>
             <div class="field">
                 <div class="control">
-                    <select name="prioritet" id="prioritet">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                    <div class="select is-primary">
+                        <select name="prioritet" id="prioritet">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
+
         <input type="text" placeholder="Задание..." class="input is-medium">
-        <div class="button_plus has-background-danger">
+        <div class="button_plus has-background-black">
             <i class="material-icons md-add"></i>
+        </div>
         </div>
 
         <div id="deals">
+            <div class="wrap_task has-background-link">
+                <p class="todo_text"> Тестовое дело </p>
+                <p>13.10.2020 / 20.10.2020 </p>
+                <i class="material-icons md-delete"></i>
+            </div>
             <!--        Здесь у нас будет происходить отрисовка при помощи JavaScript-->
         </div>
     </div>
 </div>
+
 </body>
 </html>
