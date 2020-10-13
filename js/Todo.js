@@ -1,4 +1,4 @@
-export class Todo{
+export default class Todo{
     /*
         priority - важность дела
         text - контент, содержимое

@@ -11,10 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b465cabd-e451-4dd6-86d4-466adb164cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iVnTztcvEptOS7nWx7gK5g7cby" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,11 +47,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
   <component name="RunManager" selected="Node.js.code.mjs">
-    <configuration name="code.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/code.js" working-dir="$PROJECT_DIR$">
+    <configuration name="code.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/code.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="code.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/code.mjs" working-dir="$PROJECT_DIR$">
@@ -72,6 +84,7 @@
       <updated>1602001642772</updated>
       <workItem from="1602001647334" duration="798000" />
       <workItem from="1602003579014" duration="4225000" />
+      <workItem from="1602604876674" duration="3024000" />
     </task>
     <servers />
   </component>
