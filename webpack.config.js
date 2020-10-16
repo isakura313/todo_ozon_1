@@ -1,4 +1,5 @@
 const path = require('path');
+// path это модуль для работы с путями
 
 module.exports = {
     mode: "development",
