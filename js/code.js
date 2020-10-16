@@ -1,5 +1,5 @@
-'use strict'
-import Todo from './Todo';
+'use strict' // чтобы было больше выдачи ошибок и проверки кода и работали всякие новые фишки
+import Todo from './Todo'; // импортируем класс нашего дела
 // class Card_Trello extends Todo{
 //     constructor(priority, text, dl, person) {
 //         super();
@@ -16,13 +16,13 @@ const important_color = [
     "has-background-danger has-text-white is-size-3",
     "has-background-warning has-text-black is-size-3",
     "has-background-link has-text-white is-size-3",
-]
+]; // массив prioritet - насколько дела могут быть важными / неважными
 
 const field = document.querySelector(".input")
-let select = document.querySelector("select");
-let date_picker = document.getElementById("date_picker");
+const select = document.querySelector("select");
+const date_picker = document.getElementById("date_picker");
 const button_plus = document.querySelector(".button_plus");
-
+const deals = document.querySelector(("#deals"))
 
 /*
 Функция добавления дела, котора вызвает функцию отрисовки
@@ -37,9 +37,8 @@ function addTask(){
     let todo = new Todo(select.value, content, date_picker.value);
     const todo_to_JSON  = JSON.stringify(todo);
     localStorage.setItem(String(+todo.dt), todo_to_JSON);
+    GenerateDom(todo);
     field.value = "";
-    // дальше у нас будет сохрание в LocalStorage
-
 }
 
 // назначение листенеров на нашу кнопку
@@ -54,7 +53,7 @@ document.addEventListener("keypress", (e) =>{
 // функция отрисовки нашего приложения, когда оно включается
 //данные берутся из localStorage
 function draw_on_load(){
-    // эта функция сразу сработает
+    // эта функция сразу вызовется
     // потом ее переменные вывезет GC
     for (let i = 0; i < localStorage.length; i++){
         let lk_key = localStorage.key(i); // key по индексу получить значение
@@ -73,14 +72,16 @@ deals.insertAdjacentHTML('afterbegin',
     `
         <div class="wrap_task ${important_color[obj.color]} id=${+obj.dt}">
            <p class="todo_text"> ${obj.text} </p>
-            <p> ${new Date(obj.dt).getDate()}/ ${new Date(obj.dt).getMonth()} / ${obj.dl}</p>
+            <p> ${new Date(obj.dt).getDate()}/${new Date(obj.dt).getMonth()} / ${obj.dl}</p>
                 <i class="material-icons md-delete"></i>
             </div>
     `)
 }
 
 // обработчики удаления дела
+// todo удаление дела
 
 
 // обработчики редактирования дела
+
 
