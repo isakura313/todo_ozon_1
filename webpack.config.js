@@ -4,7 +4,19 @@ const path = require('path');
 module.exports = {
     mode: "development",
     watch: true,
-    entry: './js/code.js',
+    entry: './js/code.ts',
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+        ],
+    },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ],
+    },
     devtool: "inline-cheap-source-map",
     watchOptions: {
         ignored: ["node_modules/**"],
