@@ -1,4 +1,5 @@
 const path = require('path');
+const TSL = require('/usr/lib/node_modules/ts-loader');
 // path это модуль для работы с путями
 
 module.exports = {
@@ -25,4 +26,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.bundle.js'
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        port: 3000
+      }
 };

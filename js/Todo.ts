@@ -1,8 +1,9 @@
 export default class Todo{
     priority: number;
     text: string;
-    dt:number;
-    dl: string
+    dt:string;
+    dl: string;
+    id:number;
     /*
         priority - важность дела
         text - контент, содержимое
@@ -12,8 +13,13 @@ export default class Todo{
     constructor(priority:number, text:string, dl:string) {
         this.priority = priority;
         this.text = text;
-        this.dt = Date.now();
+        this.dt = (new Date()).toString();
         this.dl = dl;
     }
+
+    SetID(id:number) {
+        this.id = id;
+    }
+
 }
 

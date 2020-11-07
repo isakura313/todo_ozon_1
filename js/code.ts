@@ -7,6 +7,10 @@ const important_color: string[] = [
   "has-background-link has-text-white is-size-3",
 ]; // массив prioritet - насколько дела могут быть важными / неважными
 
+const DBUrl = "http://isakura3131.zonopo.ru/deals";
+const DBUrlDelete = "http://isakura3131.zonopo.ru/deal/";
+
+
 const field: HTMLInputElement = <HTMLInputElement>(
   document.querySelector(".input")
 );
@@ -36,11 +40,39 @@ function addTask() {
 
   const todo_to_JSON = JSON.stringify(todo);
   console.table(todo);
-  localStorage.setItem(String(+todo.dt), todo_to_JSON);
+  //localStorage.setItem(String(+todo.dt), todo_to_JSON);
+  postData(todo_to_JSON)
+  .then((data) => {
+    todo.SetID(data);
+  });
   GenerateDom(todo);
 
   field.value = "";
 }
+
+async function postData(data:string) {
+  // Default options are marked with *
+  const response = await fetch(DBUrl, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    body: data,
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  });
+  return await response.json(); // parses JSON response into native JavaScript objects
+}
+
+
+async function loadData() {
+  // Default options are marked with *
+  const response = await fetch(DBUrl, {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+   });
+  return await response;
+  // return await response; // parses JSON response into native JavaScript objects
+}
+
 
 // назначение листенеров на нашу кнопку
 button_plus.onclick = addTask;
@@ -55,12 +87,16 @@ document.addEventListener("keypress", (e) => {
 function draw_on_load() {
   // эта функция сразу вызовется
   // потом ее переменные вывезет GC
-  for (let i = 0; i < localStorage.length; i++) {
-    let lk_key = localStorage.key(i); // key по индексу получить значение
-    let content = localStorage.getItem(lk_key); // по ключу получаем значение
-    let todo = JSON.parse(content); // parse - метод расконсервации
-    GenerateDom(todo);
-  }
+  loadData().then((response) => {
+    return response.json();
+  } )
+  .then((data:Todo[]) => {
+    console.log('AAAAAAAAAAAAAA', data);
+    data.forEach(e => {
+      GenerateDom(e);
+    }); 
+  });
+
 }
 
 draw_on_load();
@@ -69,15 +105,13 @@ draw_on_load();
 Универсальная функция отрисовки, которая у нас вставляет todo в DOM
  */
 function GenerateDom(obj: Todo) {
-  let { priority, text, dt, dl } = obj;
+  let { priority, text, dt, dl, id } = obj;
   deals.insertAdjacentHTML(
     "afterbegin",
     `
-        <div class="wrap_task ${important_color[priority - 1]}" id="${dt}">
+        <div class="wrap_task ${important_color[priority - 1]}" id="${id}">
            <p class="todo_text"> ${text} </p>
-            <p> ${new Date(dt).getDate()}/${new Date(
-      obj.dt
-    ).getMonth()} / ${dl}</p>
+            <p> ${new Date(dt).getDate()}/${new Date(dt).getMonth()} / ${dl}</p>
              <i class="material-icons md-delete"></i>
             </div>
     `
@@ -97,17 +131,16 @@ function deleteItem() {
     el.onclick = () => {
       let wrap_task:HTMLDivElement = el.parentNode;
       wrap_task.style.display = "none";
-      localStorage.removeItem(wrap_task.id);
+      // localStorage.removeItem(wrap_task.id);
+      deleteData(wrap_task.id);
     };
   });
 }
 
-// deals.addEventListener("click", (e) =>{
-//     let thrash = e.target.closest(".md-delete");
-//     // e.target - элемент, на котором происходит событие
-//     //closest - находит ближайший thrash
-//     let wrap_task = thrash.parentNode;
-//     wrap_task.remove();
-// })
-
-// обработчики редактирования дела
+async function deleteData(num:string) {
+  // Default options are marked with *
+  const response = await fetch(DBUrlDelete+num, {
+    method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+  });
+  return await response.json(); // parses JSON response into native JavaScript objects
+}
