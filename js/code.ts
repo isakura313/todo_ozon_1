@@ -35,6 +35,7 @@ function addTask() {
   let todo: Todo = new Todo(parseInt(select.value), content, date_picker.value);
 
   const todo_to_JSON = JSON.stringify(todo);
+
   console.table(todo);
   localStorage.setItem(String(+todo.dt), todo_to_JSON);
   GenerateDom(todo);

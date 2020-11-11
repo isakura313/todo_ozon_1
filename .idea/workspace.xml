@@ -11,14 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b465cabd-e451-4dd6-86d4-466adb164cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Todo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/code.ts" beforeDir="false" afterPath="$PROJECT_DIR$/js/code.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +103,8 @@
       <workItem from="1602604876674" duration="6126000" />
       <workItem from="1602864173607" duration="5596000" />
       <workItem from="1603210653107" duration="6010000" />
+      <workItem from="1603223237953" duration="5000" />
+      <workItem from="1603472051387" duration="276000" />
     </task>
     <servers />
   </component>
